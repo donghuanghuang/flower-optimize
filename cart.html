@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花店-购物车</title>
+    <link rel="icon" href="img/header.png"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+<body>
+<!--页面头部-->
+<header id="header"></header>
+
+
+<!--购物车主体-->
+<section>
+    <div class="cart_text"><h1>我的购物车</h1></div>
+   <div class="cart_show">
+       <table class="table table-hover tcart">
+           <thead>
+             <tr>
+               <th>商品</th>
+               <th>名称</th>
+               <th>数量</th>
+               <th>价格</th>
+               <th>操作</th>
+             </tr>
+           </thead>
+           <tbody id="items" data-toggle="tbody">
+           <!--
+                 <tr>
+                    <td><img src="${p.small}" alt=""/></td>
+                    <td>${p.NAME}</td>
+                    <td class="count">
+                    <span class="reduce">-</span>
+                    <input type="text" data-toggle="val" value="${p.count}" min="1"/>
+                    <span class="add">+</span>
+                    </td>
+                    <td class="price">￥<span>${p.price}&nbspX</span>&nbsp<span data-toggle="count">${p.count}</span></td>
+                    <td><a href="" class="btn-danger btn btn-xs">删除</a></td>
+                </tr>
+-->
+           </tbody>
+       </table>
+       <!--<p id="p"></p>-->
+       <div class="col-xs-12">
+           <h3 class="fr" data-total="total"></h3>
+           <h3 class="fr">总价格:￥</h3>
+       </div>
+       <div class="col-xs-12">
+           <a href="#" class="btn btn-xs btn-success btn-default fr ml-30">去结算</a>
+           <button data-clear="clear" class="btn btn-xs btn-danger  fr clearcart ">清空购物车</button>
+       </div>
+   </div>
+
+
+
+</section>
+
+
+<!--页面尾部-->
+<div class="footer">
+    <footer id="footer"></footer>
+</div>
+<!--页面尾部-->
+
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/header_jquery.js"></script>
+<script src="js/footer_jquery.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花店-支付页面</title>
+    <link rel="icon" href="img/header.png"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/pay_order.css"/>
+</head>
+<body>
+<!--页面头部-->
+<header id="header"></header>
+
+<!--支付页面主体-->
+<section>
+        <!--支付的导航条-->
+        <div class="pay_nav_1">
+            <ul>
+                <li>确定订单信息&nbsp→</li>
+                <li class="color_1">支付订单&nbsp→</li>
+                <li>支付完成&nbsp→</li>
+            </ul>
+        </div>
+    <br>
+        <div class="mes">
+            <p>支付金额&nbsp:</p>
+            <p>网上银行支付</p>
+        </div>
+    <div class="pay_nav_2" id="pay_nav_2">
+        <ul>
+            <li><input type="radio" name="bank"><img src="img/pay_img1.jpg" alt=""></li>
+            <li><input type="radio" name="bank"><img src="img/pay_img2.jpg" alt=""></li>
+            <li><input type="radio" name="bank"><img src="img/pay_img3.jpg" alt=""></li>
+            <li><input type="radio" name="bank"><img src="img/pay_img4.jpg" alt=""></li>
+            <li><input type="radio" name="bank"><img src="img/pay_img5.jpg" alt=""></li>
+        </ul>
+    </div>
+    </br>
+    <div class="pay_nav_3">
+        剩余付款时间&nbsp:&nbsp <span style="color: #0AA1ED">15:00</span>
+        <span><a href=""><input id="sure_pay" hidden type="button" value="确认支付"></a></span>
+    </div>
+</section>
+
+<!--页面尾部-->
+<div class="footer">
+    <footer id="footer">
+
+    </footer>
+</div>
+<!--页面尾部-->
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/pay_order.js"></script>
+<script src="js/header_jquery.js"></script>
+<script src="js/footer_jquery.js"></script>
+</body>
+</html>

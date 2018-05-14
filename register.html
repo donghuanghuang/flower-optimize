@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花店注册页面</title>
+    <link rel="icon" href="img/header.png"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+<!--页面头部-->
+<header id="header">
+</header>
+
+<!--登录主体-->
+<section>
+    <div id="register">
+        <div id="register_message" >
+            <form>
+                <div class="common">
+                    用户名称 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="uname" id="uname" placeholder="请输入用户名称">&nbsp;&nbsp;
+                    <span  id="showname"  class="vali_info">
+                        10个字符以内组合
+                    </span>
+                </div>
+                <div class="common">
+                    用户密码 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="password" name="upwd" id="upwd" placeholder="请输入你的密码">&nbsp;&nbsp;
+                    <span  class="vali_info">
+                        密码6-12位数字加字母
+                    </span>
+
+                </div>
+                <div class="common">
+                    确认密码 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="password" name="cpwd" id="cpwd" placeholder="请输入确认密码">&nbsp;&nbsp;
+                    <span id="showcpwd" class="vali_info">
+                        密码要一致
+                    </span>
+
+                </div>
+                <div class="common">
+                    手机号码 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="phone" id="phone" placeholder="请输入手机号码">&nbsp;&nbsp;
+                    <span  class="vali_info">
+                        手机号码必须11位
+                    </span>
+
+                </div>
+                <div class="common">
+                    用户邮箱 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="email" name="email" id="email" placeholder="请输入你的邮箱">&nbsp;&nbsp;
+                    <span  class="vali_info">
+                        邮箱要符合格式
+                    </span>
+                </div>
+
+            <div class="register_button">
+                <a href="login.html">
+                    <input type="button" value="登录" style="width: 50px;height:32px;background: black;border: none;color: white">
+                </a>
+                 <input type="button" value="注册" onclick="register()" style="width: 50px;height:32px">
+            </div>
+            </form>
+
+            <div class="read">
+                <p>用户注册/登录说明：</p>
+                <p>1、实际使用之前，需配置用户管理组件中的相关邮件。详情参考教程：</p>
+                <p><a href="">《用户管理中相关邮件的配置》</a></p>
+                <p>2、新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理</p>
+                <p>员批准（即人工审核），详情可参考教程<a href="">《如何设置用户注册后的审核方式》</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--页面尾部-->
+<div class="footer">
+    <footer id="footer">
+
+    </footer>
+</div>
+<!--页面尾部-->
+<script src="js/common.js"></script>
+<script src="js/return_id.js"></script>
+<script src="js/register.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header_register.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

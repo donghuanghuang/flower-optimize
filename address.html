@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收货地址</title>
+    <link rel="icon" href="img/header.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/address.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+<header id="header"></header>
+<div class="container">
+    <div id="alertmsg" class="modal fade in modal-content" style="display:none;width:800px;margin:-200px auto" >
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="editadrLabel"></h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="efname" class="label-control">收货人</label>
+                <input type="text" name="firstname" id="efname" required class="form-control" placeholder="输入收货人姓名">
+                <span class="help-block">请输入收货姓名</span>
+            </div>
+            <div class="form-group">
+                <label for="eadr" class="label-control">收货地址</label>
+                <input type="text" name="uaddress" id="eadr" class="form-control" required placeholder="输入收货地址">
+                <span class="help-block">请输入收货地址</span>
+            </div>
+            <div class="form-group">
+                <label for="ephone" class="label-control">收货号码</label>
+                <input type="text" name="uphone" id="ephone" class="form-control" required pattern="1[35789]\d{9}" placeholder="输入收货号码">
+                <span class="help-block">11位手机号码</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+            <button type="submit" class="btn btn-primary"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>收货地址管理</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1">
+        <button data-toggle="modal" class="btn  btn-info btn1">新增收货地址</button>
+        </div>
+    </div>
+    <table class="table table-hover text-center">
+        <thead>
+            <tr>
+                <td>编号</td>
+                <td>收货人</td>
+                <td>收货地址</td>
+                <td>手机号码</td>
+                <td>管理</td>
+            </tr>
+        </thead>
+        <tbody id="tbody1">
+
+        </tbody>
+    </table>
+    <div></div>
+<footer id="footer"></footer>
+<!--显示新增地址模态框 -->
+
+
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/header_jquery.js"></script>
+<script src="js/footer_jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/address.js"></script>
+</body>
+</html>

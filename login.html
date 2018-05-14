@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>花店登录页面</title>
+    <link rel="icon" href="img/header.png"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+<!--页面头部-->
+<header id="header"></header>
+
+<!--登录主体-->
+<section>
+    <div id="login">
+        <div id="login_message" class="animated fadeInRightBig">
+            <form>
+                <div>
+                    用户名&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" style="width: 200px;height: 22px" name="uname" value="li" id="uname"  placeholder="请输入你的用户名">
+                </div>
+            <div>
+                密码&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" style="width: 200px;height: 22px" value="123456" name="upwd" id="upwd" placeholder="请输入你的密码">
+            </div>
+
+                <div class="login_checkbox"><input type="checkbox">记住我（请在私人计算机上使用此功能）</div>
+            <div class="login_button">
+                    <input type="button" id="btn" value="登录" style="width: 50px;height:32px;background: black;border: none;color: white">&nbsp;&nbsp;&nbsp;
+                <input type="button" value="注册" style="width: 50px;height:32px">
+            </div>
+            <div class="forget_password">
+                忘记密码？点这里找回
+            </div>
+            <div class="read">
+            <p>用户注册/登录说明：</p>
+            <p>1、实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教</p>
+            <p> 程：《用户管理中相关邮件的配置》</p>
+            <p>2、新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理</p>
+            <p>员批准（即人工审核），详情可参考教程《如何设置用户注册后的审核方式》</p>
+            </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--页面尾部-->
+<div class="footer">
+    <footer id="footer"></footer>
+</div>
+<!--页面尾部-->
+
+<!--<script src="js/common.js"></script>-->
+<!--<script src="js/ajax.js"></script>-->
+<script src="js/jquery-3.2.0.js"></script>
+<script src="js/login.js"></script>
+<script src="js/header_jquery.js"></script>
+<script src="js/footer_jquery.js"></script>
+
+</body>
+</html>
